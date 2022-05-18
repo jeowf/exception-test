@@ -1,0 +1,12 @@
+
+server:
+  port: 9999
+
+logging:
+  level:
+    '[com.example.demo]': DEBUG
+    '[org.springframework.web]': DEBUG
+
+spring:
+  mvc:
+    logResolvedException: true
