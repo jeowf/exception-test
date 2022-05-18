@@ -15,7 +15,9 @@ public class DemoController {
     @GetMapping("/throw")
     public void raiseException() throws Exception{
         LOGGER.info(">>>>> /throw");
-        throw new Exception("Exception!");
+        Exception e = new Exception("Exception!");
+        // Nada
+        throw e;
     }
 
     @GetMapping("/throw-log")
